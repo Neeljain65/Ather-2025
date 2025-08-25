@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aether 2025 - National Level Technical Conference
 
-## Getting Started
+A modern, futuristic landing page for Aether 2025, a premier national-level technical conference hosted by TCET Mumbai. Built with Next.js, TypeScript, Tailwind CSS, and Framer Motion for smooth animations.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Modern Design**: Futuristic landing page with gradient backgrounds and cosmic elements
+- **Responsive Layout**: Optimized for all devices and screen sizes
+- **Smooth Animations**: Beautiful scroll-triggered animations using Framer Motion
+- **Interactive Elements**: Hover effects, floating animations, and particle systems
+- **Optimized Performance**: Built with Next.js 15 and TypeScript
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design Elements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Color Scheme**: Deep blue to lighter blue gradients with yellow/orange accents on white background
+- **Typography**: Clean, modern fonts (Inter & JetBrains Mono)
+- **Animations**: Fade-in, slide-up transitions, glow effects, and floating elements
+- **Decorative Elements**: Stars, sparkles, and abstract shapes for cosmic atmosphere
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📱 Sections
 
-## Learn More
+1. **Hero Section**: Conference title, date (26 September 2025), venue (TCET Mumbai), and registration CTA
+2. **About Section**: Event description and key features
+3. **Competitions Section**: Four main competitions with details and apply buttons
+   - HerSpark Ideathon (Women in STEM, 2–4 members)
+   - Paper Presentation (1–4 members)
+   - Poster Presentation (1–4 members)
+   - Hackconquest Hackathon (2–4 members, 36 hours)
+4. **Highlights Section**: Prizes, goodies, expert talks, and mentoring sessions
+5. **Footer**: Contact information, social links, and registration QR code
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS with custom gradients and animations
+- **UI Components**: Shadcn/ui
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Package Manager**: npm
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏃‍♂️ Getting Started
 
-## Deploy on Vercel
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/aether-2025.git
+   cd aether-2025
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view the website
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🎯 Competition Details
+
+### HerSpark Ideathon
+- **Target**: Women in STEM
+- **Team Size**: 2–4 girl members
+- **Deadline**: 19 September 2025
+- **Focus**: Innovative ideas and breakthrough solutions
+
+### Paper Presentation
+- **Team Size**: 1–4 members
+- **Deadline**: 19 September 2025
+- **Format**: Present research and technical findings
+
+### Poster Presentation
+- **Team Size**: 1–4 members
+- **Deadline**: 19 September 2025
+- **Format**: Visual presentation of projects and research
+
+### Hackconquest Hackathon
+- **Team Size**: 2–4 members
+- **Duration**: 36 hours
+- **Deadline**: 19 September 2025
+- **Format**: Intensive coding and innovation challenge
+
+## 🏆 Conference Highlights
+
+- Amazing cash prizes and tech merchandise
+- Premium conference goodies and swag
+- Expert talks from industry leaders
+- One-on-one mentoring sessions
+- Networking opportunities
+- Digital and physical certificates
+
+## 📞 Contact Information
+
+- **Email**: contact@aether2025.com
+- **Phone**: +91 98765 43210
+- **Venue**: Thakur College of Engineering and Technology, Mumbai
+- **Date**: 26 September 2025
+
+## 🤝 Contributing
+
+We welcome contributions to improve the Aether 2025 website. Please feel free to:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- TCET Mumbai for hosting the conference
+- All students and organizers involved
+- Open source community for the amazing tools and libraries
+
+---
+
+**Made with ❤️ by TCET Students**
+
+*Where Innovation Meets Excellence*
