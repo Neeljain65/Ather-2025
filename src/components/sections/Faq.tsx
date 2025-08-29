@@ -1,8 +1,16 @@
 "use client"
 import { ArrowDownRight } from "lucide-react"
 import { useState } from "react"
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
 
-function Faq({ question, answer, isActive, handleClick  }) {
+interface FaqProps extends FaqItem {
+  isActive: boolean;
+  handleClick: () => void;
+}
+function Faq({ question, answer, isActive, handleClick }: FaqProps) {
 	return (
 		<button
 			onClick={handleClick}
@@ -38,23 +46,20 @@ function Faq({ question, answer, isActive, handleClick  }) {
 	)
 }
 
-export function FaqTeachers({ faqs}) {
-	const [active, setActive] = useState(null)
+export function FaqTeachers({ faqs }: { faqs: FaqItem[] }) {
+  const [active, setActive] = useState<number | null>(null)
 
-	return (
-		<div className="mt-8 grid lg:grid-cols-2 gap-6">
-			{faqs.map((item, i) => (
-				<Faq
-					key={i}
-					question={item.question}
-					answer={item.answer}
-					isActive={active === i}
-					handleClick={() =>
-						active === i ? setActive(null) : setActive(i)
-					}
-					
-				/>
-			))}
-		</div>
-	)
+  return (
+    <div className="mt-8 grid lg:grid-cols-2 gap-6">
+      {faqs.map((item, i) => (
+        <Faq
+          key={i}
+          question={item.question}
+          answer={item.answer}
+          isActive={active === i}
+          handleClick={() => (active === i ? setActive(null) : setActive(i))}
+        />
+      ))}
+    </div>
+  )
 }
