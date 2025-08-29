@@ -28,20 +28,10 @@ export default function ExpandableCardDemo() {
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
- function useOutsideClick(ref: RefObject<HTMLDivElement | null>, handler: () => void) {
-    useEffect(() => {
-      function handleClick(event: MouseEvent) {
-        if (ref.current && !ref.current.contains(event.target as Node)) {
-          handler();
-        }
-      }
-
-      document.addEventListener("mousedown", handleClick);
-      return () => {
-        document.removeEventListener("mousedown", handleClick);
-      };
-    }, [ref, handler]);
-  }
+  // Close the expanded card when clicking outside the card element
+  useOutsideClick(ref, () => {
+    if (active && typeof active === "object") setActive(null);
+  });
   return (
     <>
       <AnimatePresence>
@@ -72,7 +62,7 @@ export default function ExpandableCardDemo() {
                   duration: 0.05,
                 },
               }}
-              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
+              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-8 w-8 z-50"
               onClick={() => setActive(null)}
             >
               <CloseIcon />

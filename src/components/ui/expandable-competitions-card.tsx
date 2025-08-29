@@ -49,20 +49,9 @@ export default function ExpandableCompetitionsCard({ cards }: ExpandableCompetit
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
- function useOutsideClick(ref: RefObject<HTMLDivElement | null>, handler: () => void) {
-    useEffect(() => {
-      function handleClick(event: MouseEvent) {
-        if (ref.current && !ref.current.contains(event.target as Node)) {
-          handler();
-        }
-      }
-
-      document.addEventListener("mousedown", handleClick);
-      return () => {
-        document.removeEventListener("mousedown", handleClick);
-      };
-    }, [ref, handler]);
-  }
+  useOutsideClick(ref, () => {
+    if (active && typeof active === "object") setActive(null);
+  });
   return (
     <>
       <AnimatePresence>
@@ -84,7 +73,7 @@ export default function ExpandableCompetitionsCard({ cards }: ExpandableCompetit
               initial={{ borderRadius: "12px" }}
               animate={{ borderRadius: "12px" }}
               exit={{ borderRadius: "12px" }}
-              className="p-1 absolute top-6 right-6 bg-white rounded-full h-6 w-6 flex items-center justify-center border border-neutral-200"
+              className="p-1 z-50 absolute top-6 right-6 bg-white rounded-full h-6 w-6 flex items-center justify-center border border-neutral-200"
               onClick={() => setActive(null)}
             >
               <CloseIcon />

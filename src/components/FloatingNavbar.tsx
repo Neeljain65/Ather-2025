@@ -11,17 +11,17 @@ export const FloatingNavbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { scrollY } = useScroll();
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    const direction = latest > lastScrollY ? "down" : "up";
-    const atTop = latest < 50;
+  // useMotionValueEvent(scrollY, "change", (latest) => {
+  //   const direction = latest > lastScrollY ? "down" : "up";
+  //   const atTop = latest < 50;
     
-    if (direction === "down" && latest > 100 && !atTop) {
-      setIsVisible(false);
-    } else if (direction === "up" || atTop) {
-      setIsVisible(true);
-    }
-    setLastScrollY(latest);
-  });
+  //   if (direction === "down" && latest > 100 && !atTop) {
+  //     setIsVisible(false);
+  //   } else if (direction === "up" || atTop) {
+  //     setIsVisible(true);
+  //   }
+  //   setLastScrollY(latest);
+  // });
 
   const navItems = [
     { name: "Home", href: "#hero" },
@@ -43,7 +43,7 @@ export const FloatingNavbar = () => {
   return (
     <>
       <motion.nav
-        className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 max-w-6xl w-full mx-4"
+        className="absolute top-4 left-1/2 transform -translate-x-1/2 z-50 max-w-6xl w-full mx-4"
         initial={{ opacity: 0, y: -100 }}
         animate={{ 
           opacity: isVisible ? 1 : 0, 
@@ -55,9 +55,9 @@ export const FloatingNavbar = () => {
           {/* Logo/Brand */}
           <motion.div 
             className="font-bold text-lg bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
-            whileHover={{ scale: 1.05 }}
+            // whileHover={{ scale: 1.05 }}
           >
-            AETHER 2025
+            AETHER
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -76,14 +76,7 @@ export const FloatingNavbar = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-medium px-4 lg:px-6 rounded-full text-sm"
-            >
-              Register
-            </Button>
-          </div>
+         
 
           {/* Mobile Menu Button */}
           <motion.button

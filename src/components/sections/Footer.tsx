@@ -37,7 +37,8 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white relative overflow-hidden">
+    <footer id="contact" className="mt-16 min-h-96 w-screen bg-gradient-to-b from-white via-white to-purple-400">
+
       {/* Subtle decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <svg className="absolute top-10 right-20 w-16 h-16 text-gray-700" viewBox="0 0 100 100" fill="none">
@@ -65,16 +66,16 @@ export const Footer = () => {
                     2025
                   </span>
                 </h3>
-                <p className="text-gray-300 text-lg mb-4">
+                <p className="text-black text-lg mb-4">
                   National Level Technical Conference
                 </p>
-                <p className="text-gray-400 max-w-md leading-relaxed">
+                <p className="text-purple-950 max-w-md leading-relaxed">
                   Join us for an extraordinary journey of innovation, learning, and networking 
                   at India&apos;s most prestigious student-driven technical conference.
                 </p>
               </div>
 
-              <div className="space-y-3 text-gray-300">
+              <div className="space-y-3 text-purple-950">
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-blue-400" />
                   <span>Thakur College of Engineering and Technology, Mumbai</span>
@@ -96,13 +97,13 @@ export const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h4 className="text-xl font-semibold mb-6 text-white">Quick Links</h4>
+              <h4 className="text-xl font-semibold mb-6 text-purple-950">Quick Links</h4>
               <ul className="space-y-3">
                 {["About", "Competitions", "Schedule", "Sponsors", "Contact"].map((link) => (
                   <li key={link}>
                     <a 
                       href={`#${link.toLowerCase()}`}
-                      className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-2 group"
+                      className="text-purple-950 hover:text-purple-950 transition-colors duration-200 flex items-center gap-2 group"
                     >
                       <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                       {link}
@@ -121,7 +122,7 @@ export const Footer = () => {
             >
               {/* QR Code Section */}
               <div>
-                <h4 className="text-xl font-semibold mb-4 text-white">Quick Registration</h4>
+                <h4 className="text-xl font-semibold mb-4 text-purple-950">Quick Registration</h4>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
                   <QrCode className="w-16 h-16 mx-auto mb-2 text-blue-400" />
                   <p className="text-sm text-gray-300 mb-3">Scan to register</p>
@@ -136,7 +137,7 @@ export const Footer = () => {
 
               {/* Social Links */}
               <div>
-                <h4 className="text-xl font-semibold mb-4 text-white">Follow Us</h4>
+                <h4 className="text-xl font-semibold mb-4 text-purple-950">Follow Us</h4>
                 <div className="flex gap-4">
                   {socialLinks.map((social) => (
                     <motion.a
@@ -162,11 +163,11 @@ export const Footer = () => {
             className="border-t border-white/20 mt-12 pt-8 text-center"
           >
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-gray-400">
+              <p className="text-purple-950">
                 © 2025 Aether Conference. All rights reserved.
               </p>
               
-              <div className="flex items-center gap-2 text-gray-400">
+              <div className="flex items-center gap-2 text-purple-950">
                 <span>Made with</span>
                 <motion.div
                   animate={{ scale: [1, 1.2, 1] }}
@@ -184,7 +185,7 @@ export const Footer = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
             >
-              <p className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <p className="text-2xl font-semibold bg-gradient-to-r from-purple-900 to-pink-800 bg-clip-text text-transparent">
                 Where Innovation Meets Excellence
               </p>
             </motion.div>

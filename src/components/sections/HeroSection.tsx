@@ -185,7 +185,7 @@ export const HeroSection = () => {
       <div className="mt-16 relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[80vh] lg:min-h-[60vh]">
 
-  <Sparkles className="absolute top-6 left-4  w-16 h-16 text-purple-400 " />
+  {/* <Sparkles className=" absolute top-6 left-4  w-16 h-16 text-purple-400 " />
 <svg
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 200 50"
@@ -198,7 +198,7 @@ export const HeroSection = () => {
     strokeWidth="3"
     strokeLinecap="round"
   />
-</svg>
+</svg> */}
 
           {/* Left side - Image/Visual placeholder */}
           <motion.div 
@@ -226,9 +226,8 @@ export const HeroSection = () => {
           </motion.div>
 
           {/* Right side - Text content */}
-          <div className="order-1 lg:order-2 text-center lg:text-left">
-            {/* Top Badge */}
-            <motion.div
+           <motion.div className="order-1 lg:order-2 text-center lg:text-left">
+              <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -242,15 +241,15 @@ export const HeroSection = () => {
 
             {/* Title */}
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight"
+              className="text-3xl sm:text-7xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              Fuel <span className="text-purple-600">Innovation</span>,
+              TSDW <span>Presents</span>
               <br className="hidden sm:block" />
-              <span className="block sm:inline"> Spark </span>
-              <span className="text-blue-600">Connection</span>
+              <span className="block text-pink-300 sm:inline"> Aether 2025</span>
+             
             </motion.h1>
 
             {/* Subtitle */}
@@ -264,9 +263,12 @@ export const HeroSection = () => {
               future of technology.
             </motion.p>
 
-            {/* Card with Date, Venue and Button */}
-            <motion.div
-              className="flex flex-col sm:flex-row items-center justify-between bg-purple-100/60 px-4 sm:px-6 py-4 sm:py-5 rounded-2xl shadow-lg border border-purple-200/50 max-w-2xl mx-auto lg:mx-0"
+            </motion.div>
+          <div className="order-2 lg:order-2 text-center lg:text-left">
+          </div>
+           <div className="order-2 mb-5">
+              <motion.div
+              className=" flex flex-col sm:flex-row items-center justify-between bg-purple-100/60 px-4 sm:px-6 py-4 sm:py-5 rounded-2xl shadow-lg border border-purple-200/50 max-w-2xl mx-auto lg:mx-0"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
@@ -288,13 +290,13 @@ export const HeroSection = () => {
                 Register Now
               </Button>
             </motion.div>
-          </div>
+        </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
       <motion.div
-        className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2"
+        className=" absolute bottom-4 opacity-0 lg:opacity-100 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       >
