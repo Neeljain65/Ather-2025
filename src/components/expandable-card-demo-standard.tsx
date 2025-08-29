@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useEffect, useId, useRef, useState } from "react";
+import React, { RefObject, useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-
+import Image from "next/image";
+    
 export default function ExpandableCardDemo() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
@@ -27,9 +28,20 @@ export default function ExpandableCardDemo() {
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
+ function useOutsideClick(ref: RefObject<HTMLDivElement | null>, handler: () => void) {
+    useEffect(() => {
+      function handleClick(event: MouseEvent) {
+        if (ref.current && !ref.current.contains(event.target as Node)) {
+          handler();
+        }
+      }
 
-  useOutsideClick(ref, () => setActive(null));
-
+      document.addEventListener("mousedown", handleClick);
+      return () => {
+        document.removeEventListener("mousedown", handleClick);
+      };
+    }, [ref, handler]);
+  }
   return (
     <>
       <AnimatePresence>
@@ -71,7 +83,7 @@ export default function ExpandableCardDemo() {
               className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
-                <img
+                <Image
                   width={200}
                   height={200}
                   src={active.src}
@@ -134,7 +146,7 @@ export default function ExpandableCardDemo() {
           >
             <div className="flex gap-4 flex-col md:flex-row ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
-                <img
+                <Image
                   width={100}
                   height={100}
                   src={card.src}
