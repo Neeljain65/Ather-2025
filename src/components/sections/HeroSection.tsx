@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Sparkles } from "lucide-react";
+import Image from "next/image";
 
 const BackgroundDecorations = () => {
   const stars = Array.from({ length: 15 }, (_, i) => ({
@@ -208,17 +209,13 @@ export const HeroSection = () => {
             transition={{ duration: 1, delay: 0.3 }}
           >
             {/* Placeholder for conference image */}
-            
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center p-6">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
-                  <Sparkles className="w-8 h-8 text-white" />
-                </div>
-                <p className="text-gray-600 text-sm">Conference Visual</p>
-                <p className="text-gray-500 text-xs mt-1">Coming Soon</p>
-              </div>
-            </div>
-            
+            <Image
+              src="/hero.png"
+              alt="Aether 2025 Conference"
+              className="w-full h-full object-cover object-center"
+              layout="fill"
+              objectFit="cover"
+            />
             {/* Decorative elements */}
             <div className="absolute top-4 right-4 w-8 h-8 bg-purple-200/50 rounded-full"></div>
             <div className="absolute bottom-6 left-6 w-6 h-6 bg-blue-200/50 rounded-full"></div>

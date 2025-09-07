@@ -76,7 +76,7 @@ export const AboutSection = () => {
               </span>
             </h2>
           </motion.div>
-
+    
           <motion.p
             variants={itemVariants}
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -98,7 +98,8 @@ export const AboutSection = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="text-center p-6 rounded-xl bg-gray-50/50 hover:bg-gray-50 hover:shadow-md transition-all duration-300 group border border-gray-100"
+              className="text-center p-6 rounded-xl bg-gradient-to-br from-blue-450
+              via-purple-200 to-purple-500 hover:bg-gray-50 hover:shadow-md transition-all duration-300 group border border-gray-100"
               whileHover={{ y: -3 }}
             >
               <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg mb-4 group-hover:scale-110 transition-transform duration-300">

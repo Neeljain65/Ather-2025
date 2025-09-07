@@ -14,6 +14,7 @@ export const CompetitionsSection = () => {
   const competitions = [
     {
       title: "HerSpark Ideathon",
+      image:"/herspark.JPG",
       description: "Empowering women in STEM to showcase innovative ideas and breakthrough solutions.",
       teamSize: "2–4 girl members",
       deadline: "19 September 2025",
@@ -60,6 +61,7 @@ export const CompetitionsSection = () => {
     },
     {
       title: "Paper Presentation",
+      image:"/paper.JPG",
       description: "Present your research and technical findings to a panel of expert judges.",
       teamSize: "1–4 members",
       deadline: "19 September 2025",
@@ -106,6 +108,7 @@ export const CompetitionsSection = () => {
     },
     {
       title: "Poster Presentation",
+      image:"/poster.JPG",
       description: "Showcase your innovative projects and research through compelling visual presentations.",
       teamSize: "1–4 members",
       deadline: "19 September 2025",
@@ -152,6 +155,7 @@ export const CompetitionsSection = () => {
     },
     {
       title: "Hackconquest Hackathon",
+      image:"/hack.png",
       description: "36 hours of intensive coding, collaboration, and innovation. Build the future!",
       teamSize: "2–4 members",
       deadline: "19 September 2025",

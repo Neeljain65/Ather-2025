@@ -19,14 +19,8 @@ export const Footer = () => {
     {
       name: "Instagram",
       icon: Instagram,
-      href: "#",
+      href: "https://www.instagram.com/tcet_tsdw/",
       color: "hover:text-pink-500",
-    },
-    {
-      name: "Twitter",
-      icon: Twitter,
-      href: "#",
-      color: "hover:text-blue-400",
     },
     {
       name: "LinkedIn",
@@ -82,11 +76,11 @@ export const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-blue-400" />
-                  <span>contact@aether2025.com</span>
+                  <span>tcet.tsdw@tcetmumbai.in</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-blue-400" />
-                  <span>+91 98765 43210</span>
+                  <span>+91 9021440961</span>
                 </div>
               </div>
             </motion.div>
@@ -175,7 +169,7 @@ export const Footer = () => {
                 >
                   <Heart className="w-4 h-4 text-red-500 fill-current" />
                 </motion.div>
-                <span>by TCET Students</span>
+                <span>by Neel jain</span>
               </div>
             </div>
 

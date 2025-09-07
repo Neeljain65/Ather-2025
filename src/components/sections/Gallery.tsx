@@ -6,7 +6,7 @@ export default function Slider() {
   const { scrollXProgress } = useScroll({ container: ref });
 
   // Array of image filenames or numbers
-  const imageFiles = Array.from({  length: 10 }, (_, index) => `${index + 3}.webp`);
+  const imageFiles = Array.from({  length: 10 }, (_, index) => `${index + 1}.webp`);
 
   return (
     <div className="w-full p-5 mt-5">
@@ -41,12 +41,12 @@ export default function Slider() {
         {imageFiles.map((filename, index) => (
           <li
             key={index}
-            className="flex-none w-[200px] h-full bg-white last:mr-0"
+            className="flex-none w-[250px] h-full bg-white last:mr-0"
           >
             <img
               src={`./Carosel/${filename}`}
               alt={`Image ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center rounded-lg"
             />
           </li>
         ))}

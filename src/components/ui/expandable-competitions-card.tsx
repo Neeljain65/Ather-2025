@@ -7,6 +7,7 @@ import { Users, Calendar, Zap } from "lucide-react";
 
 interface CompetitionCard {
   title: string;
+  image: string;
   description: string;
   teamSize: string;
   deadline: string;
@@ -87,8 +88,8 @@ export default function ExpandableCompetitionsCard({ cards }: ExpandableCompetit
                 <div
                   className={`w-full h-80 bg-gradient-to-br ${active.bgGradient} relative flex items-center justify-center`}
                 >
-                  <div className={`p-4 bg-gradient-to-br ${active.gradient} rounded-2xl shadow-lg`}>
-                    <active.icon className="w-12 h-12 text-white" />
+                  <div className={` bg-gradient-to-br ${active.gradient} rounded-2xl shadow-lg`}>
+                    <img src={active.image} alt={active.title} className=" object-cover rounded-lg" />
                   </div>
                   {active.special && (
                     <div className="absolute top-4 right-4 inline-flex items-center gap-1 px-3 py-1 bg-white/90 text-gray-700 rounded-full text-sm font-medium shadow-sm">
@@ -150,15 +151,16 @@ export default function ExpandableCompetitionsCard({ cards }: ExpandableCompetit
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col hover:bg-white rounded-xl cursor-pointer border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 group bg-white/50 backdrop-blur-sm"
+            className="bg-gradient-to-br from-blue-350 to-purple-300 to-blue-300 p-4 flex flex-col hover:bg-white rounded-xl cursor-pointer border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 group bg-white/50 backdrop-blur-sm"
           >
             <div className="flex gap-4 flex-col w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <div
                   className={`h-40 w-full rounded-lg bg-gradient-to-br ${card.bgGradient} flex items-center justify-center relative overflow-hidden`}
                 >
-                  <div className={`p-3 bg-gradient-to-br ${card.gradient} rounded-xl shadow-md group-hover:scale-110 transition-transform duration-300`}>
-                    <card.icon className="w-8 h-8 text-white" />
+                  <div className={`bg-gradient-to-br ${card.gradient} rounded-xl shadow-md group-hover:scale-110 transition-transform duration-300`}>
+                    <img src={card.image} alt={card.title} className="w-full h-full object-cover  rounded-md" />
+
                   </div>
                   {card.special && (
                     <div className="absolute top-2 right-2 inline-flex items-center gap-1 px-2 py-1 bg-white/80 text-gray-700 rounded-full text-xs font-medium">
