@@ -37,40 +37,36 @@ export const items = [
 
 export const faqs = [
 	{
-		question: "What tools and resources are available for Hackanova 4.0 participants?",
-		answer: "Participants get access to mentoring sessions and technical support during the event."
+		question: "Who can participate in AETHER 2025 events?",
+		answer: "AETHER 2025 is open to undergraduate, postgraduate students, diploma students, junior college students, and early researchers, depending on the event. Specific eligibility criteria are mentioned for each track (e.g., HerSpark Ideathon is for girl students, while NSC-ETT and NMTRC are open to all)."
 	},
 	{
-		question: "Who is eligible to apply?",
-		answer: "Anyone with a passion for solving problems and innovation can apply. Specific eligibility criteria may vary by event."
+	question: "What competitions are included in Aether 2025?",
+		answer: "Aether 2025 features multiple competitions: HerSpark Ideathon (for female participants), NSC-ETT Paper/Poster Presentation, NMTRC, and Hackconquest."
 	},
 	{
 		question: "Is there any registration fee?",
-		answer: "No, there is no registration fee for participating in Hackanova 4.0."
+		answer: "No, there is no registration fee for participating in Aether 2025 competitions."
 	},
 	{
-		question: "How can I stay updated about Hackanova 4.0?",
-		answer: "Join our Telegram group for updates! You can find the link to join at theend of the registration form."
+		question: "How can I stay updated about Aether 2025?",
+		answer: "Join our official Telegram group for updates! You can find the link to join at the end of the registration form."
 	},
-	
-
 	{
-		question: "What are the perks of participating in this hackathon?",
-		answer: "Participants get networking opportunities, mentorship, prizes for winners, and the chance to work on innovative solutions."
+		question: "What are the team size requirements?",
+		answer: "Team sizes vary by competition: HerSpark Ideathon requires 2-4 female members, NSC-ETT Paper/Poster Presentation allows 1-4 members, and AKHYAAN/Manthan/Hackconquest requires 2-4 members per team."
 	},
-	
 	{
-		question: "What are the team requirements for Hackanova 4.0?",
-		answer: "Teams can consist of 2-4 members. Only the team leader needs to submit the registration form."
+		question: "What are the perks of participating?",
+		answer: "Participants get networking opportunities, mentorship, exciting prizes and goodies for winners, certificates, and the chance to showcase innovative solutions to industry professionals."
 	},
 	{
 		question: "Will accommodation and food be provided?",
-		answer: "Yes, accommodation and meals will be provided to all participants during the hackathon."
+		answer: "Yes, accommodation and meals will be provided to all participants during the conference days."
 	},
-	
 	{
-		question: "Where will the hackathon be held?",
-		answer: "Hackanova 4.0 will be held at  TCET campus, further will be communicated to selected participants."
+		question: "Where will the events take place?",
+		answer: "Most events will be conducted offline at TCET Campus, Mumbai. However, the HackConquest Hackathon begins online with idea submission and concludes with an online demo."
 	}
 ];
 

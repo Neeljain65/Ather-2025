@@ -79,7 +79,7 @@ export const AboutSection = () => {
     
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed "
           >
             Aether 2025 is a premier national-level technical conference that brings together 
             the brightest minds in technology, innovation, and research. Join us for an 

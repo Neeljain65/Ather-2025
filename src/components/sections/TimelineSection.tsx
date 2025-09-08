@@ -21,24 +21,11 @@ export const TimelineSection = () => {
               <Rocket className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h4 className="text-lg font-semibold text-gray-900">August 1, 2025</h4>
-              <p className="text-sm text-gray-600">Early Bird Registration</p>
+              <h4 className="text-lg font-semibold text-gray-900">1 September 2025</h4>
+              <p className="text-sm text-gray-600">Early  Registration</p>
             </div>
           </div>
-          <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-            <p className="text-gray-700 leading-relaxed">
-              Early bird registration opens for all competitions! Register now to secure your spot 
-              and get exclusive conference merchandise. Limited seats available for each competition.
-            </p>
-            <div className="mt-3 flex flex-wrap gap-2">
-              <span className="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full font-medium">
-                25% Discount
-              </span>
-              <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full font-medium">
-                Free Merchandise
-              </span>
-            </div>
-          </div>
+          
         </div>
       ),
     },
@@ -51,8 +38,8 @@ export const TimelineSection = () => {
               <Users className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h4 className="text-lg font-semibold text-gray-900">August 15, 2025</h4>
-              <p className="text-sm text-gray-600">Team Building Phase</p>
+              <h4 className="text-lg font-semibold text-gray-900">Team Building Phase</h4>
+             
             </div>
           </div>
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
@@ -70,11 +57,11 @@ export const TimelineSection = () => {
                 <p className="text-gray-600">2-4 members</p>
               </div>
               <div>
-                <span className="font-medium text-gray-900">Paper Presentation:</span>
+                <span className="font-medium text-gray-900">NSC-ETT Paper/Poster:</span>
                 <p className="text-gray-600">1-4 members</p>
               </div>
               <div>
-                <span className="font-medium text-gray-900">Poster Presentation:</span>
+                <span className="font-medium text-wrap text-gray-900">NMRTC</span>
                 <p className="text-gray-600">1-4 members</p>
               </div>
             </div>
@@ -83,7 +70,7 @@ export const TimelineSection = () => {
       ),
     },
     {
-      title: "Submission Deadline",
+      title: "Registration & Submission Deadlines",
       content: (
         <div className="space-y-4">
           <div className="flex items-center gap-3 mb-4">
@@ -91,19 +78,70 @@ export const TimelineSection = () => {
               <Calendar className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h4 className="text-lg font-semibold text-gray-900">September 19, 2025</h4>
-              <p className="text-sm text-gray-600">Final Submission</p>
+              <h4 className="text-lg font-semibold text-gray-900">12-20 September 2025</h4>
+              <p className="text-sm text-gray-600">Competition Deadlines</p>
             </div>
           </div>
           <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
-            <p className="text-gray-700 leading-relaxed mb-3">
-              Last date for all competition submissions! Make sure to submit your abstracts, 
-              code repositories, and presentation materials before the deadline.
-            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm mb-4">
+              <div>
+                <span className="font-medium text-gray-900">NSC-ETT Paper/Poster:</span>
+                <p className="text-gray-600">Registration: 12 Sept</p>
+                <p className="text-gray-600">Submission: 15 Sept</p>
+              </div>
+              <div>
+                <span className="font-medium text-gray-900">AKHYAAN/Manthan (NMTRC):</span>
+                <p className="text-gray-600">Registration: 12 Sept</p>
+                <p className="text-gray-600">Submission: 15 Sept</p>
+              </div>
+              <div>
+                <span className="font-medium text-gray-900">HerSpark Ideathon:</span>
+                <p className="text-gray-600">Deadline: 17 Sept</p>
+              </div>
+              <div>
+                <span className="font-medium text-gray-900">Hackconquest:</span>
+                <p className="text-gray-600">Deadline: 20 Sept</p>
+              </div>
+            </div>
+            
             <div className="bg-red-100 border border-red-200 rounded-lg p-3 mt-3">
               <p className="text-red-800 font-medium text-sm flex items-center gap-2">
                 <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
-                No extensions will be granted after this date
+                No extensions will be granted after these dates
+              </p>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Results Announcement",
+      content: (
+        <div className="space-y-4">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="p-2 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-lg">
+              <Star className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900">21 September 2025</h4>
+              <p className="text-sm text-gray-600">Round 1 Results</p>
+            </div>
+          </div>
+          <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Results for Round 1 of NSC-ETT Paper/Poster presentations  and shortlisting announcements. Top 5 teams per track will be selected for the final round.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Results for Round 1 of NMTRC Manthan/AKHYAAN  and shortlisting announcements
+            </p>
+             <div className="bg-purple-100 border border-purple-200 rounded-lg p-3 mt-3">
+              <p className="text-purple-800 font-medium text-sm">
+                  Shortlisting for HackconQuest Hackthon will be on on 22nd September 2025
+              </p>
+            </div>
+            <div className="bg-purple-100 border border-purple-200 rounded-lg p-3 mt-3">
+              <p className="text-purple-800 font-medium text-sm">
+                Finalists will be notified via email and announcements will be made 
               </p>
             </div>
           </div>
@@ -119,14 +157,14 @@ export const TimelineSection = () => {
               <Star className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h4 className="text-lg font-semibold text-gray-900">September 26, 2025</h4>
+              <h4 className="text-lg font-semibold text-gray-900">26 September 2025</h4>
               <p className="text-sm text-gray-600">The Big Day</p>
             </div>
           </div>
           <div className="bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-4">
             <p className="text-gray-700 leading-relaxed mb-4">
-              The grand finale! Experience 36 hours of intense competition, networking, 
-              expert talks, and innovation at TCET Mumbai. Meet industry leaders and showcase your talent.
+              The grand finale at TCET Mumbai! All final round presentations, demos, and competitive events 
+              happen today. Hackconquest participants will showcase their online demos and finalist presentations.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
               <div className="bg-white rounded-lg p-3 border">
@@ -135,11 +173,11 @@ export const TimelineSection = () => {
               </div>
               <div className="bg-white rounded-lg p-3 border">
                 <h5 className="font-semibold text-purple-700">Day</h5>
-                <p className="text-gray-600">Competitions & Workshops</p>
+                <p className="text-gray-600">Final Presentations & Demos</p>
               </div>
               <div className="bg-white rounded-lg p-3 border">
                 <h5 className="font-semibold text-purple-700">Evening</h5>
-                <p className="text-gray-600">Awards & Networking</p>
+                <p className="text-gray-600">Workshops & Networking</p>
               </div>
             </div>
           </div>
@@ -155,7 +193,7 @@ export const TimelineSection = () => {
               <Award className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h4 className="text-lg font-semibold text-gray-900">September 27, 2025</h4>
+              <h4 className="text-lg font-semibold text-gray-900">27 September 2025</h4>
               <p className="text-sm text-gray-600">Closing Ceremony</p>
             </div>
           </div>
@@ -164,16 +202,16 @@ export const TimelineSection = () => {
               Grand closing ceremony with award distribution, winner announcements, 
               and certificate presentation. Network with fellow participants and celebrate innovation!
             </p>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mt-3">
               <span className="px-3 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white text-sm rounded-full font-medium flex items-center gap-1">
                 <Award className="w-4 h-4" />
-                Cash Prizes
+                Exciting Prizes
               </span>
               <span className="px-3 py-2 bg-gradient-to-r from-purple-400 to-pink-400 text-white text-sm rounded-full font-medium">
                 Certificates
               </span>
               <span className="px-3 py-2 bg-gradient-to-r from-blue-400 to-indigo-400 text-white text-sm rounded-full font-medium">
-                Internship Opportunities
+                Goodies & Swag
               </span>
             </div>
           </div>
@@ -217,10 +255,7 @@ export const TimelineSection = () => {
             </span>
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From registration to recognition - here&apos;s your complete roadmap for Aether 2025. 
-            Mark your calendar and don&apos;t miss any important dates!
-          </p>
+          
         </motion.div>
       </div>
 

@@ -37,11 +37,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto pb-20 pt-12 px-4 md:px-8 lg:px-10">
+      <div className="max-w-7xl mx-auto pb-5 pt-12 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
           Aether Timeline
         </h2>
-     
+     <p className="text-xl text-gray-600 max-w-3xl ">
+            From registration to recognition - here&apos;s your complete roadmap for Aether 2025. 
+            Mark your calendar and don&apos;t miss any important dates!
+          </p>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

@@ -115,7 +115,7 @@ export const Footer = () => {
               className="space-y-6"
             >
               {/* QR Code Section */}
-              <div>
+              {/* <div>
                 <h4 className="text-xl font-semibold mb-4 text-purple-950">Quick Registration</h4>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
                   <QrCode className="w-16 h-16 mx-auto mb-2 text-blue-400" />
@@ -127,7 +127,7 @@ export const Footer = () => {
                     Register Now
                   </Button>
                 </div>
-              </div>
+              </div> */}
 
               {/* Social Links */}
               <div>

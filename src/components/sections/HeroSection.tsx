@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Sparkles } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const BackgroundDecorations = () => {
   const stars = Array.from({ length: 15 }, (_, i) => ({
@@ -40,7 +41,7 @@ const BackgroundDecorations = () => {
       ))}
       
       {/* Floating abstract shapes - responsive sizing */}
-      <motion.div
+      <motion.div 
         className="absolute top-16 left-4 sm:top-20 sm:left-10 w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full blur-3xl"
         animate={{ y: [-8, 12, -8], x: [-4, 6, -4] }}
         transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
@@ -183,7 +184,7 @@ export const HeroSection = () => {
       <BackgroundDecorations />
       
       {/* Content */}
-      <div className="mt-16 relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mt-32 relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[80vh] lg:min-h-[60vh]">
 
   {/* <Sparkles className=" absolute top-6 left-4  w-16 h-16 text-purple-400 " />
@@ -217,9 +218,7 @@ export const HeroSection = () => {
               objectFit="cover"
             />
             {/* Decorative elements */}
-            <div className="absolute top-4 right-4 w-8 h-8 bg-purple-200/50 rounded-full"></div>
-            <div className="absolute bottom-6 left-6 w-6 h-6 bg-blue-200/50 rounded-full"></div>
-            <div className="absolute top-1/3 left-8 w-4 h-4 bg-purple-300/50 rounded-full"></div>
+           
           </motion.div>
 
           {/* Right side - Text content */}
@@ -238,7 +237,7 @@ export const HeroSection = () => {
 
             {/* Title */}
             <motion.h1
-              className="text-3xl sm:text-7xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
@@ -280,12 +279,11 @@ export const HeroSection = () => {
                   <span className="text-sm sm:text-base font-medium">TCET Mumbai</span>
                 </div>
               </div>
-              <Button
-                size="lg"
-                className="bg-black hover:bg-gray-800 text-white font-semibold px-6 py-3 text-sm sm:text-base rounded-full shadow-md transition-all duration-300 hover:scale-105 w-full sm:w-auto"
-              >
-                Register Now
-              </Button>
+              <Link href={"https://unstop.com/hackathons/herspark-ideathon-2025-thakur-college-of-engineering-and-technology-tcet-mumbai-1551098"}>
+                <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 text-sm sm:text-base rounded-full shadow-md transition-all duration-300">
+                  Register Now
+                </Button>
+              </Link>
             </motion.div>
         </div>
         </div>

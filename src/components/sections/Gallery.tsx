@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
+import Image from "next/image";
 
 export default function Slider() {
   const ref = useRef(null);

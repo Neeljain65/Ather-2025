@@ -21,8 +21,8 @@ function Faq({ question, answer, isActive, handleClick }: FaqProps) {
 					: `bg-pink-100 pb-2 `
 			}`}
 		>
-			<div className="flex justify-between items-center w-full rounded-3xl">
-				<p className={`w-4/5 lg:text-xl  text-md  ${isActive?"text-white":"text-slate-900"} transition-colors duration-300`}>{question}</p>
+			<div className="p-2 flex justify-between items-center w-full rounded-3xl">
+				<p className={`w-4/5 font-medium lg:text-xl  text-md  ${isActive?"text-white":"text-slate-900"} transition-colors duration-300`}>{question}</p>
 				<div className="size-14 grid place-items-center bg-white rounded-full text-[#030F40]">
 					<ArrowDownRight
 						className={`transition-transform duration-300 ${

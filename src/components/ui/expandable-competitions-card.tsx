@@ -8,6 +8,7 @@ import { Users, Calendar, Zap } from "lucide-react";
 interface CompetitionCard {
   title: string;
   image: string;
+  link: string;
   description: string;
   teamSize: string;
   deadline: string;
@@ -82,22 +83,26 @@ export default function ExpandableCompetitionsCard({ cards }: ExpandableCompetit
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white sm:rounded-3xl overflow-hidden"
+          className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white sm:rounded-3xl overflow-y-auto scrollbar-hide"
+
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
-                <div
-                  className={`w-full h-80 bg-gradient-to-br ${active.bgGradient} relative flex items-center justify-center`}
-                >
-                  <div className={` bg-gradient-to-br ${active.gradient} rounded-2xl shadow-lg`}>
-                    <img src={active.image} alt={active.title} className=" object-cover rounded-lg" />
-                  </div>
-                  {active.special && (
-                    <div className="absolute top-4 right-4 inline-flex items-center gap-1 px-3 py-1 bg-white/90 text-gray-700 rounded-full text-sm font-medium shadow-sm">
-                      <Zap className="w-4 h-4 text-orange-500" />
-                      {active.special}
-                    </div>
-                  )}
-                </div>
+              <div
+  className={`w-full h-80 bg-gradient-to-br ${active.bgGradient} relative overflow-hidden rounded-2xl`}
+>
+  <img
+    src={active.image}
+    alt={active.title}
+    className="w-full h-full object-cover rounded-2xl"
+  />
+  {active.special && (
+    <div className="absolute top-4 right-4 inline-flex items-center gap-1 px-3 py-1 bg-white/90 text-gray-700 rounded-full text-sm font-medium shadow-sm">
+      <Zap className="w-4 h-4 text-orange-500" />
+      {active.special}
+    </div>
+  )}
+</div>
+
               </motion.div>
 
               <div>
@@ -122,7 +127,7 @@ export default function ExpandableCompetitionsCard({ cards }: ExpandableCompetit
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    href={active.ctaLink}
+                    href={active.link}
                     target="_blank"
                     className={`px-4 py-2 text-sm rounded-full font-bold bg-gradient-to-r ${active.gradient} text-white shadow-md hover:shadow-lg transition-all duration-300`}
                   >
@@ -135,7 +140,7 @@ export default function ExpandableCompetitionsCard({ cards }: ExpandableCompetit
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-neutral-600 text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto  [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function" ? active.content() : active.content}
                   </motion.div>
@@ -156,19 +161,21 @@ export default function ExpandableCompetitionsCard({ cards }: ExpandableCompetit
             <div className="flex gap-4 flex-col w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <div
-                  className={`h-40 w-full rounded-lg bg-gradient-to-br ${card.bgGradient} flex items-center justify-center relative overflow-hidden`}
-                >
-                  <div className={`bg-gradient-to-br ${card.gradient} rounded-xl shadow-md group-hover:scale-110 transition-transform duration-300`}>
-                    <img src={card.image} alt={card.title} className="w-full h-full object-cover  rounded-md" />
+  className={`h-40 w-full rounded-lg bg-gradient-to-br ${card.bgGradient} relative overflow-hidden`}
+>
+  <img
+    src={card.image}
+    alt={card.title}
+    className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
+  />
+  {card.special && (
+    <div className="absolute top-2 right-2 inline-flex items-center gap-1 px-2 py-1 bg-white/80 text-gray-700 rounded-full text-xs font-medium">
+      <Zap className="w-3 h-3 text-orange-500" />
+      {card.special}
+    </div>
+  )}
+</div>
 
-                  </div>
-                  {card.special && (
-                    <div className="absolute top-2 right-2 inline-flex items-center gap-1 px-2 py-1 bg-white/80 text-gray-700 rounded-full text-xs font-medium">
-                      <Zap className="w-3 h-3 text-orange-500" />
-                      {card.special}
-                    </div>
-                  )}
-                </div>
               </motion.div>
               <div className="flex justify-center items-center flex-col">
                 <motion.h3

@@ -14,10 +14,11 @@ export const CompetitionsSection = () => {
   const competitions = [
     {
       title: "HerSpark Ideathon",
+       link:"https://unstop.com/hackathons/herspark-ideathon-2025-thakur-college-of-engineering-and-technology-tcet-mumbai-1551098",
       image:"/herspark.JPG",
       description: "Empowering women in STEM to showcase innovative ideas and breakthrough solutions.",
       teamSize: "2–4 girl members",
-      deadline: "19 September 2025",
+      deadline: "17 September 2025",
       icon: Lightbulb,
       gradient: "from-pink-500 to-purple-600",
       bgGradient: "from-pink-50 to-purple-50",
@@ -28,22 +29,30 @@ export const CompetitionsSection = () => {
       prizes: ["₹50,000 Cash Prize", "Internship Opportunities", "Mentorship Program"],
       requirements: ["Women participants only", "Original idea presentation", "Technical feasibility"],
       content: () => (
-        <div className="space-y-4">
+        <div className="space-y-4 ">
+          <h1>  Registeration Deadline: 17th Sept’2025</h1>
           <p className="text-gray-700 leading-relaxed">
-            HerSpark Ideathon is exclusively designed to empower women in STEM fields. This competition 
-            encourages female participants to present innovative solutions to real-world problems.
+             TRACK 1:  FinTech & Digital Literacy for Everyone.
+  (Junior 
+  College & Diploma
+  College)
+
           </p>
-          
+          <p className="text-gray-700 leading-relaxed">
+           TRACK 2:  Cyber Safety & Digital
+ Empowerment.
+ (Engineering Colleges)
+
+          </p>
+
           <div className="space-y-3">
             <h4 className="font-semibold text-gray-900 flex items-center gap-2">
               <Award className="w-4 h-4 text-pink-500" />
               Prizes & Benefits
             </h4>
             <ul className="space-y-1 text-sm text-gray-600">
-              <li>• ₹50,000 Cash Prize for winners</li>
-              <li>• Internship opportunities with partner companies</li>
-              <li>• One-year mentorship program</li>
-              <li>• Certificate of participation</li>
+              <li>•  Exciting goodies and winning prizes</li>
+              <li>•  Certificate of participation</li>
             </ul>
           </div>
 
@@ -60,11 +69,12 @@ export const CompetitionsSection = () => {
       ),
     },
     {
-      title: "Paper Presentation",
+      title: " NSC-ETT Paper Presentation",
+      link:"https://unstop.com/workshops-webinars/aether-national-students-conference-on-emerging-trends-and-technology-paper-presentation-thakur-colle-1550929",
       image:"/paper.JPG",
       description: "Present your research and technical findings to a panel of expert judges.",
       teamSize: "1–4 members",
-      deadline: "19 September 2025",
+      deadline: "12 September 2025",
       icon: Presentation,
       gradient: "from-blue-500 to-indigo-600",
       bgGradient: "from-blue-50 to-indigo-50",
@@ -76,10 +86,18 @@ export const CompetitionsSection = () => {
       requirements: ["Original research work", "IEEE format", "15-minute presentation"],
       content: () => (
         <div className="space-y-4">
+          <h1>  Registeration Deadline: 12th Sept’2025</h1>
+           <h1>  Submission  Deadline: 15th Sept’2025</h1>
           <p className="text-gray-700 leading-relaxed">
-            Showcase your research work and technical innovations through comprehensive paper presentations. 
-            Present your findings to industry experts and academic professionals.
+           🔹Round 1 (Online)
+ Plagiarism Check (10%)
+ Results on 21 September
+5 teams per track shortlisted
+
           </p>
+          <p  className="text-gray-700 leading-relaxed"> 🔹 Round 2 (Offline)
+ 6-7 Powerpoint (IEEE FORMAT)
+ 12 minutes (2 setup + 8 presentation + 2 Q&A)</p>
           
           <div className="space-y-3">
             <h4 className="font-semibold text-gray-900 flex items-center gap-2">
@@ -87,9 +105,9 @@ export const CompetitionsSection = () => {
               Prizes & Recognition
             </h4>
             <ul className="space-y-1 text-sm text-gray-600">
-              <li>• ₹30,000 Cash Prize for best paper</li>
-              <li>• Publication opportunity in conference proceedings</li>
-              <li>• Industry recognition and networking</li>
+                 <li>•  Exciting goodies and winning prizes</li>
+              {/* <li>• Publication opportunity in conference proceedings</li> */}
+              
               <li>• Certificate of excellence</li>
             </ul>
           </div>
@@ -107,11 +125,12 @@ export const CompetitionsSection = () => {
       ),
     },
     {
-      title: "Poster Presentation",
+      title: "NSC-ETT Poster Presentation",
+      link:"https://unstop.com/workshops-webinars/aether-national-students-conference-on-emerging-trends-and-technology-poster-presentation-thakur-coll-1551515",
       image:"/poster.JPG",
       description: "Showcase your innovative projects and research through compelling visual presentations.",
       teamSize: "1–4 members",
-      deadline: "19 September 2025",
+      deadline: "12 September 2025",
       icon: Trophy,
       gradient: "from-green-500 to-teal-600",
       bgGradient: "from-green-50 to-teal-50",
@@ -123,10 +142,19 @@ export const CompetitionsSection = () => {
       requirements: ["A0/A1 size poster", "Visual appeal", "Technical accuracy"],
       content: () => (
         <div className="space-y-4">
+          <h1>  Registeration Deadline: 12th Sept’2025</h1>
+          <h1>  Submission  Deadline: 15th Sept’2025</h1>
           <p className="text-gray-700 leading-relaxed">
-            Transform your research and projects into visually compelling posters. This competition 
-            focuses on effective visual communication of technical concepts.
+            🔹Round 1 (Online)
+ Criteria – originality, clarity, appeal
+ Results on 21 september 
+5 teams per track shortlisted
+
           </p>
+          <p className="text-gray-700 leading-relaxed"> 🔹 Round 2 (Offline)
+ Printed A3 poster
+ 6 minutes (4 presentation + 2 Q&A).
+ </p>
           
           <div className="space-y-3">
             <h4 className="font-semibold text-gray-900 flex items-center gap-2">
@@ -134,10 +162,10 @@ export const CompetitionsSection = () => {
               Awards & Recognition
             </h4>
             <ul className="space-y-1 text-sm text-gray-600">
-              <li>• ₹20,000 Cash Prize for best poster</li>
-              <li>• Best Design and Innovation awards</li>
-              <li>• Industry exposure and feedback</li>
-              <li>• Digital showcase on conference website</li>
+                 <li>•  Exciting goodies and winning prizes</li>
+              {/* <li>• Publication opportunity in conference proceedings</li> */}
+              
+              <li>• Certificate of excellence</li>
             </ul>
           </div>
 
@@ -154,15 +182,166 @@ export const CompetitionsSection = () => {
       ),
     },
     {
-      title: "Hackconquest Hackathon",
-      image:"/hack.png",
-      description: "36 hours of intensive coding, collaboration, and innovation. Build the future!",
+      title: " AKHYAAN ",
+      link:"https://unstop.com/conferences/akhyaan-tech-story-telling-through-articles-national-multilingual-technical-research-conclave-thakur-college-1549369?lb=dm1oMfyb&utm_medium=Share&utm_source=nepsaa9974&utm_campaign=Conferences",
+      image:"/NMRTC.png",
+      description: "The Ākhyaan 2025 track empowers participants to present creative articles, storytelling pieces, and visually engaging content in multiple languages. It focuses on simplifying complex technical concepts, fostering clarity, and making science accessible to broader audiences through narrative driven and visually appealing formats.",
       teamSize: "2–4 members",
       deadline: "19 September 2025",
       icon: Code,
       gradient: "from-orange-500 to-red-600",
       bgGradient: "from-orange-50 to-red-50",
-      special: "36 hours",
+      
+      src: "placeholder",
+      ctaText: "Register Now",
+      ctaLink: "#hackathon",
+      duration: "36 hours",
+      prizes: ["₹1,00,000 Cash Prize", "Startup Incubation", "Tech Gadgets"],
+      requirements: ["Working prototype", "Source code", "Live demo"],
+      content: () => (
+        <div className="space-y-4">
+            <h1>  Registeration Deadline: 12th Sept’2025</h1>
+           <h1>  Submission  Deadline: 15th Sept’2025</h1>
+          <p className="text-gray-700 leading-relaxed">
+             Themes:
+             <br />
+             🔹 Renewable & Sustainable Energy
+             <br />
+             🔹 Artificial Intelligence & Data Science
+             <br />
+             🔹 Smart Cities & Urban Development
+             <br />
+             🔹 Emerging Mechanical & Electrical Systems
+             <br />
+             🔹 Healthcare & Biotechnological Advances
+             <br />
+             🔹 Social Impact of Technology
+          </p>
+          
+          <div className="space-y-3">
+            <h4 className="font-semibold text-gray-900 flex items-center gap-2">
+              <Award className="w-4 h-4 text-orange-500" />
+              Grand Prizes
+            </h4>
+          <ul className="space-y-1 text-sm text-gray-600">
+                 <li>•  Exciting goodies and winning prizes</li>
+              {/* <li>• Publication opportunity in conference proceedings</li> */}
+              
+              <li>• Certificate of excellence</li>
+            </ul>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-gray-900">What to Expect</h4>
+            <ul className="space-y-1 text-sm text-gray-600">
+              <li>•
+ 5 mins presentation + 3 mins
+ Q&A
+</li>
+              <li> • Smart board provided;
+ slides/visuals/multimedia
+ allowed</li>
+              <li>•  Presentations must follow a
+ Storytelling / Narration
+ format – making your research
+ engaging, relatable &
+ impactful.</li>
+            
+            </ul>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Manthan",
+      link:"https://unstop.com/conferences/manthan-2025-national-multilingual-technical-research-conclave-thakur-college-of-engineering-and-technology--1549368?lb=dm1oMfyb&utm_medium=Share&utm_source=nepsaa9974&utm_campaign=Conferences",
+      image:"/NMRTC.png",
+      description: "The Manthan 2025 track encourages students and researchers to present original research papers in Hindi. It emphasizes analytical thinking, evidence-based findings, and formal scientific communication, enabling participants to showcase in-depth, structured research while promoting scientific discourse in regional language",
+      teamSize: "2–4 members",
+      deadline: "19 September 2025",
+      icon: Code,
+      gradient: "from-orange-500 to-red-600",
+      bgGradient: "from-orange-50 to-red-50",
+     
+      src: "placeholder",
+      ctaText: "Register Now",
+      ctaLink: "#hackathon",
+      duration: "36 hours",
+      prizes: ["₹1,00,000 Cash Prize", "Startup Incubation", "Tech Gadgets"],
+      requirements: ["Working prototype", "Source code", "Live demo"],
+      content: () => (
+        <div className="space-y-4">
+            <h1>  Registeration Deadline: 12th Sept’2025</h1>
+           <h1>  Submission  Deadline: 15th Sept’2025</h1>
+          <p className="text-gray-700 leading-relaxed">
+             Themes:
+             <br />
+             🔹 Renewable & Sustainable Energy
+             <br />
+             🔹 Artificial Intelligence & Data Science
+             <br />
+             🔹 Smart Cities & Urban Development
+             <br />
+             🔹 Emerging Mechanical & Electrical Systems
+             <br />
+             🔹 Healthcare & Biotechnological Advances
+             <br />
+             🔹 Social Impact of Technology
+          </p>
+          
+          <div className="space-y-3">
+            <h4 className="font-semibold text-gray-900 flex items-center gap-2">
+              <Award className="w-4 h-4 text-orange-500" />
+              Grand Prizes
+            </h4>
+          <ul className="space-y-1 text-sm text-gray-600">
+                 <li>•  Exciting goodies and winning prizes</li>
+              {/* <li>• Publication opportunity in conference proceedings</li> */}
+              
+              <li>• Certificate of excellence</li>
+            </ul>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-gray-900">What to Expect</h4>
+            <ul className="space-y-1 text-sm text-gray-600">
+              <li>•
+ 7 mins presentation + 3 mins
+ Q&A
+</li>
+              <li> • Smart board provided;
+ slides/visuals/multimedia
+ allowed</li>
+              <li>•
+ Language: Hindi only (paper &
+ presentation)
+</li>
+              <li>•
+ Format: IEEE | 2,500–3,000 words |
+ PDF/DOCX
+</li>
+              <li>•
+ Plagiarism: 
+≤
+ 10% (checked via
+ Turnitin)</li>
+            
+            </ul>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Hackconquest Hackathon",
+      link:"https://unstop.com/hackathons/aether-hackconquest-hackathon-thakur-college-of-engineering-and-technology-tcet-mumbai-1549817?lb=kvBYCxE4",
+      image:"/hack.png",
+      description: "Intensive coding, collaboration, and innovation. Build the future!",
+      teamSize: "2–4 members",
+      deadline: "20 September 2025",
+      icon: Code,
+      gradient: "from-orange-500 to-red-600",
+      bgGradient: "from-orange-50 to-red-50",
+    
       src: "placeholder",
       ctaText: "Join Hackathon",
       ctaLink: "#hackathon",
@@ -172,27 +351,32 @@ export const CompetitionsSection = () => {
       content: () => (
         <div className="space-y-4">
           <p className="text-gray-700 leading-relaxed">
-            The ultimate 36-hour coding marathon! Work in teams to solve real-world challenges 
-            using cutting-edge technology. Build, innovate, and compete for amazing prizes.
+           🔹Round 1 (Online)
+ Idea submission
+ judged on innovation, feasibility, relevance,
+ technical potential.
+
           </p>
-          
+          <p className="text-gray-700 leading-relaxed">
+           🔹Round 2 (Offline)
+            Online demo (26 Sept)
+            8 mins (5 presentation + 3 Q&A).
+          </p>
           <div className="space-y-3">
             <h4 className="font-semibold text-gray-900 flex items-center gap-2">
               <Award className="w-4 h-4 text-orange-500" />
               Grand Prizes
             </h4>
             <ul className="space-y-1 text-sm text-gray-600">
-              <li>• ₹1,00,000 Cash Prize for winning team</li>
-              <li>• Startup incubation opportunity</li>
-              <li>• Latest tech gadgets and equipment</li>
-              <li>• Industry mentorship program</li>
+              <li>•  Exciting goodies and winning prizes</li>
+              <li>•  Certificate of participation</li>
             </ul>
           </div>
 
           <div className="space-y-3">
             <h4 className="font-semibold text-gray-900">What to Expect</h4>
             <ul className="space-y-1 text-sm text-gray-600">
-              <li>• 36 hours of non-stop coding</li>
+           
               <li>• Mentorship from industry experts</li>
               <li>• Free meals and refreshments</li>
               <li>• Networking with like-minded developers</li>

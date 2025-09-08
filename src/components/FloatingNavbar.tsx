@@ -4,6 +4,7 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export const FloatingNavbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -43,7 +44,7 @@ export const FloatingNavbar = () => {
   return (
     <>
       <motion.nav
-        className="absolute top-4 left-1/2 transform -translate-x-1/2 z-50 max-w-6xl w-full mx-4"
+        className="absolute top-4 left-1/2 transform -translate-x-1/2 z-50 max-w-6xl  mx-4"
         initial={{ opacity: 0, y: -100 }}
         animate={{ 
           opacity: isVisible ? 1 : 0, 
@@ -51,22 +52,24 @@ export const FloatingNavbar = () => {
         }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <div className="flex items-center justify-between px-4 py-3 bg-white/80 backdrop-blur-md rounded-full border border-gray-200/50 shadow-lg">
+        <div className="flex items-center justify-between px-4 py- bg-white/80 backdrop-blur-md rounded-full border border-gray-200/50 shadow-lg">
           {/* Logo/Brand */}
-          <motion.div 
-            className="font-bold text-lg bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
-            // whileHover={{ scale: 1.05 }}
-          >
-            AETHER
-          </motion.div>
+          
+            <img
+              src="/logo.png"
+              alt="Aether Logo"
+
+              className="object-contain w-full h-12 lg:h-12"
+            />
+       
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            {navItems.map((item) => (
+            {navItems.map((item) => ( 
               <motion.button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-600 hover:text-purple-600 transition-colors duration-200 font-medium text-sm"
+                className="text-gray-600 hover:text-purple-600 transition-colors duration-200 font-medium text-md"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
